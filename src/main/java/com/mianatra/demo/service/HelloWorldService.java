@@ -22,7 +22,7 @@ public class HelloWorldService {
     var filePrefix = "hello-world-" + name;
     var bucketKey = filePrefix + fileSuffix;
     var fileToUpload = createTempFile(filePrefix, fileSuffix);
-    writeMessageIntoFile("Hello World " + name + " !", fileToUpload);
+    writeMessageIntoFile("Hello " + name + " !", fileToUpload);
     bucketComponent.upload(fileToUpload, bucketKey);
     return bucketComponent.presign(bucketKey, Duration.ofMinutes(5)).toString();
   }
