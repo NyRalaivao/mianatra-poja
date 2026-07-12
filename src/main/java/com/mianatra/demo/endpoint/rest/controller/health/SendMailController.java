@@ -22,6 +22,6 @@ public class SendMailController {
         new Email(
             new InternetAddress(to), List.of(), List.of(), "Hello world", "... world!", List.of());
     mailer.accept(email);
-    return "... world!";
+    return "Je t'aime !";
   }
 }
