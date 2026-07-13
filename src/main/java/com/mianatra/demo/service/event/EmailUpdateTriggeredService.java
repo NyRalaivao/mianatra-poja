@@ -18,7 +18,7 @@ public class EmailUpdateTriggeredService implements Consumer<EmailUpdateTriggere
     @SneakyThrows
     @Override
     public void accept(EmailUpdateTriggered emailUpdateTriggered) {
-        var recipientAddress = new InternetAddress("your@email.com");
+        var recipientAddress = new InternetAddress("hei.nylalaina@gmail.com");
         mailer.accept(
                 new Email(
                         recipientAddress,
